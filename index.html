@@ -10,6 +10,12 @@
         function clickButton() {
             alert("Olá mundo, irei buscar..")
         }
+        function atualizacaoTexto() {
+            let input = document.getElementById("procurar");
+            let text = document.getElementById("pokeDigitado");
+
+            text.textContent = input.value;
+        }
     </script>
 
 </head>
@@ -22,10 +28,15 @@
     <h2> <a href="https://www.pokemon.com/br/">Link para site oficial </a></h2>
 
     <p> Procurar Pokemon: </p>
-    <input id="procurar" type="text" />
+    <input id="procurar" type="text" oninput="atualizacaoTexto()" />
     <button onclick="clickButton()">
         Procurar
     </button>
+
+    <h2> O pokemon digitado é : </h2>
+    <p id="pokeDigitado">
+        ...
+    </p>
 </body>
 
 </html>
