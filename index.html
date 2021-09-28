@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokemon</title>
     <script>
-        function clickButton() {
-            alert("Olá mundo, irei buscar..")
-        }
+
         function atualizacaoTexto() {
             let input = document.getElementById("procurar");
             let text = document.getElementById("pokeDigitado");
@@ -17,21 +15,76 @@
             text.textContent = input.value;
         }
     </script>
+    <style>
+        * {
+            margin: 0;
+        }
 
+        div {
+            margin: 0;
+            width: '50vw';
+            height: '50vh';
+            background-color: blue;
+        }
+
+        body {
+            background-color: gray;
+        }
+
+        h1 {
+            font-size: 14;
+            font-family: Tahoma;
+            color: white;
+        }
+
+        .procurar {
+            display: flex;
+            border: solid 1px cyan;
+            justify-content: center;
+        }
+
+        input {
+            margin: auto;
+            width: 70%;
+            height: 30%;
+
+        }
+
+        h2 {
+            font-size: 32;
+            font-family: Tahoma;
+            color: blue;
+            text-align: center;
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        #pokeDigitado {
+            margin-top: 20px;
+            font-size: 50;
+            font-family: cursive;
+            color: midnightblue;
+        }
+    </style>
 </head>
 
 <body>
     <div id="logo">
-        <img src="logo.png" />
+        <img id="logoPoke" src="logo.png" />
+    </div>
+    <div class="procurar">
+        <h1> Procurar Pokemon </h1>
+        <input id="procurar" type="text" oninput="atualizacaoTexto()" />
+
     </div>
 
-    <h2> <a href="https://www.pokemon.com/br/">Link para site oficial </a></h2>
-
-    <p> Procurar Pokemon: </p>
-    <input id="procurar" type="text" oninput="atualizacaoTexto()" />
-    <button onclick="clickButton()">
-        Procurar
-    </button>
 
     <h2> O pokemon digitado é : </h2>
     <p id="pokeDigitado">
