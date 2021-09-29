@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Desafio Final - HTMl e CSS</title>
+
+    <style>
+        * {
+            margin: 0;
+
+        }
+
+        #menu,
+        img {
+            margin: 10px;
+            display: flex;
+            background-color: rgb(156, 109, 47);
+            max-width: 100%;
+            height: 8vh;
+            align-items: center;
+
+        }
+
+        img {
+            border-radius: 10px;
+            height: 80%;
+        }
+
+        .title {
+
+            background-color: rgb(156, 109, 47);
+            font-family: Tahoma;
+            color: white;
+            text-align: center;
+
+        }
+
+        span {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 15px;
+            font-family: tahoma;
+            font-size: 40;
+            color: rgb(156, 109, 47);
+            font-weight: bold;
+        }
+
+
+        #card {
+            display: flex;
+            flex-direction: column;
+            margin: 15px;
+            border: solid 8px rgb(23, 18, 54);
+            border-radius: 5px;
+            background-color: rgb(159, 160, 221);
+            height: 43vh;
+        }
+
+        #carro {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            width: auto;
+            height: 30vh;
+        }
+
+
+        .information {
+
+            max-width: 100%;
+            display: flex;
+            margin-top: 4px;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: tahoma;
+            color: rgb(13, 19, 27);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="menu">
+        <img src="./menuIcon.png" />
+        <h1 class="title"> AluCar </h1>
+    </div>
+
+    <span> Alugue um carro de qualquer lugar que estiver! </span>
+
+    <div id="card">
+        <div id="carro">
+            <img src="./gol.png" />
+        </div>
+
+        <div class="information">
+            <p> Gol </p>
+            <p> R$ 80,00 </p>
+        </div>
+        <div class="information">
+            <p> Campo Mourão - PR </p>
+            <p> Alugar</p>
+        </div>
+    </div>
+    <div id="card">
+        <div id="carro">
+            <img src="./outlander.png" />
+        </div>
+
+        <div class="information">
+            <p> Outlander </p>
+            <p> R$ 150,00 </p>
+        </div>
+        <div class="information">
+            <p> Maringa - PR </p>
+            <p> Alugar</p>
+        </div>
+    </div>
+</body>
+
+</html>
