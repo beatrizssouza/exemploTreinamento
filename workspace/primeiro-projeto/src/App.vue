@@ -1,22 +1,22 @@
 <template>
-  <div id="app">
-    <NovoComponente />
+  <div id="App">
+    <TesteEvento />
   </div>
 </template>
 
 <script>
-import NovoComponente from "./components/NovoComponente.vue";
+import TesteEvento from "./components/TesteEvento.vue";
 
 export default {
   name: "App",
   components: {
-    NovoComponente,
+    TesteEvento,
   },
 };
 </script>
 
 <style>
-#app {
+#App {
   margin: 0;
   background-color: white;
 }

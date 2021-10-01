@@ -1,5 +1,5 @@
 <template>
-  <div class="menu">
+  <div class="novo-componente">
     <p>projeto</p>
   </div>
 </template>
