@@ -1,22 +1,28 @@
 <template>
   <div id="App">
-    <TesteEvento />
+    <MeuContador />
   </div>
 </template>
 
 <script>
-import TesteEvento from "./components/TesteEvento.vue";
+import MeuContador from "./components/MeuContador.vue";
 
 export default {
   name: "App",
   components: {
-    TesteEvento,
+    MeuContador,
   },
 };
 </script>
 
 <style>
 #App {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
   margin: 0;
   background-color: white;
 }
